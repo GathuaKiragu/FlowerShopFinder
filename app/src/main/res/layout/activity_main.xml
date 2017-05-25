@@ -20,16 +20,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Flower Shop Finder"
-        android:shadowColor="@color/text_shadow"
         android:textColor="@color/colorWhite"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
         android:id="@+id/textView"
         app:layout_constraintRight_toLeftOf="@+id/imageView"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:text="SIGN UP"
+        android:background="@drawable/styles"
+        android:textColor="@color/colorWhite"
+        tools:layout_editor_absoluteY="405dp"
+        tools:layout_editor_absoluteX="121dp"
+        android:bottomLeftRadius="73dp"
+        android:bottomRightRadius="73dp"
+        android:topLeftRadius="73dp"
+        android:topRightRadius="73dp"/>
+
 
 
 </android.support.constraint.ConstraintLayout>
