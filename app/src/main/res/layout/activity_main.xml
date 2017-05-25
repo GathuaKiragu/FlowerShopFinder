@@ -7,13 +7,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.kiragu.flowershopfinder.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wallpaper"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Flower Shop Finder"
+        android:shadowColor="@color/text_shadow"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintVertical_bias="0.077" />
+
 
 </android.support.constraint.ConstraintLayout>
