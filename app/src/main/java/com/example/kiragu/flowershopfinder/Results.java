@@ -3,9 +3,12 @@ package com.example.kiragu.flowershopfinder;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -30,7 +33,16 @@ public class Results extends AppCompatActivity {
         String location = intent.getStringExtra("location");
         mResultsTextView.setText("This are then flowerShops near " + location );
 // Displays the available flowershops in the given location
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, flowershops);
+        MyResultsArrayAdapter adapter = new MyResultsArrayAdapter(this, android.R.layout.simple_list_item_1, flowershops, flowers);
         mListView.setAdapter(adapter);
+
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String flowershop = ((TextView)view).getText().toString();
+                Toast.makeText(Results.this, flowershop, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
