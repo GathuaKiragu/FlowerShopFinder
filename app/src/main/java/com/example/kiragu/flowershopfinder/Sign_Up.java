@@ -20,7 +20,7 @@ public class Sign_Up extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__up);
         ButterKnife.bind(this);
-
+//Gets the first name of user from the signup activity and passes it to the searchshop class
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
