@@ -27,7 +27,8 @@ public class SearchShop extends AppCompatActivity {
 //        Gets User Name From the SignUp Page and Displays it in the nameTextView
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
-        mNameTextView.setText("Hey! " + name + " welcome To FlowerShopFinder");
+      mNameTextView.setText("Hey! " + name + " welcome To FlowerShopFinder");
+
 //        Override method to take user to the the results page once the Find Shop Button is clicked
         mFindShop.setOnClickListener(new View.OnClickListener() {
             @Override

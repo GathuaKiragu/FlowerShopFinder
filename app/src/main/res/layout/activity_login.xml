@@ -62,7 +62,7 @@
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorGrey"
                     android:maxLines="1"
                     android:singleLine="true" />
 
