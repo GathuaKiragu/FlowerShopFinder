@@ -17,6 +17,9 @@ public class Results extends AppCompatActivity {
     private String[] flowershops = new String[] {"Westlands Florist Center", "The red Petal florist", "Dessert Rose Florist", "Sendflowers", "Kenya Flower Council",
             "Mirriams Flowers", "Gathua flowers", "Flower Bliss", "GateWay florists", "Floral Boutique", "Sixth Sense"
     };
+    private String[] flowers = new String[] {"Pine Trees", "Wedding Flowers", "Customized Roses", "Birthday Flowers", "Garden Flowers",
+            "Palm Trees", "Potted and Vaced Flowers", "Anniversary Flowers", "Gifts florists", "Burial Boutique", "Garden Sense"
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
